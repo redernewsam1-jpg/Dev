@@ -777,13 +777,13 @@ async def txt_handler(bot: Client, m: Message):
 
             elif "https://cpvod.testbook.com/" in url or "classplusapp.com/drm/" in url:
                 url = url.replace("https://cpvod.testbook.com/","https://media-cdn.classplusapp.com/drm/")
-                url = f"https://covercel.vercel.app/extract_keys?url={url}@bots_updatee&user_id=1403488629"
+                url = f"https://neelam-1.onrender.com?url={url}@Newclassplassaehaj_bot&user_id=1403488629"
                 mpd, keys = helper.get_mps_and_keys(url)
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
 
             elif "classplusapp" in url:
-                signed_api = f"https://covercel.vercel.app/extract_keys?url={url}@bots_updatee&user_id=1403488629"
+                signed_api = f"https://neelam-1.onrender.com?url={url}@Newclassplassaehaj_bot&user_id=1403488629"
                 response = requests.get(signed_api, timeout=40)
                 url = response.text.strip()
                 url = response.json()['url']  
@@ -1113,7 +1113,7 @@ async def text_handler(bot: Client, m: Message):
 
             elif "https://cpvod.testbook.com/" in url or "classplusapp.com/drm/" in url:
                 url = url.replace("https://cpvod.testbook.com/","https://media-cdn.classplusapp.com/drm/")
-                url = f"https://covercel.vercel.app/extract_keys?url={url}@bots_updatee&user_id=7793257011"
+                url = f"https://neelam-1.onrender.com?url={url}@Newclassplassaehaj_bot&user_id=1403488629"
                 mpd, keys = helper.get_mps_and_keys(url)
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
